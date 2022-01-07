@@ -1,0 +1,56 @@
+$richBlack : #011627;
+$radRed : #FF3366;
+$tiffBlue : #2EC4B6;
+$cultWhite : #F6F7F8;
+$carolinaBlue : #20A4F3;
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body{
+    background-color: $richBlack;
+    color: $cultWhite;
+
+    img {
+        max-height: 225px;
+    }
+}
+
+.GameImgContainer {
+    display: flex;
+    flex-direction: column;
+    img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+
+
+
+
+#mainHeader{
+    color: $radRed;
+}
+#description{
+    color: $cultWhite;
+}
+
+#howToUse{
+    height: 250px;
+    padding-top: 10px;
+    border: 1px solid $tiffBlue;
+    h2{
+        color: $radRed;
+    }
+}
+
+#converter {
+    border: 1px solid $tiffBlue;
+}

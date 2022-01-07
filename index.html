@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senso - Multiplayer Sensitivity Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index-style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row justify-content-end border">
+                <div class="col-4">
+                    <h1 id="mainHeader" class="display-1 my-0">Senso</h1>
+                    <span id="description">Mouse Sensitivity Converter</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div id="howToUse" class="row">
+            <div class="col-7">
+                <h2>How To Use</h2>
+                <p>
+                <ol>
+                    <li>Select the current game you are playing</li>
+                    <li>Select the game you want the converted sensitivity for</li>
+                    <li>Enter in your sensitivity from your current game</li>
+                    <li>Enter in your current DPI that you use for the current game</li>
+                    <li>Enter in the DPI you will use for the new game</li>
+                </ol>
+                Take the converted sensitivity and continue practicing those flicks and one taps!
+                </p>
+            </div>
+            <div class="col-5">
+                <div class="container">
+                    <div class="row align-content-center">
+                        <div class="col-6">
+                            <div class="GameImgContainer">
+                                <p>Current Game: </p>
+                                <img id="currGameLogo" class="img-fluid" src="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="GameImgContainer">
+                                <p>New Game:</p>
+                                <img id="newGameLogo" class="img-fluid" src="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="converter" class="container">
+        <div class="row align-items-center justify-content-between mt-2">
+            <div class="col-md-4" id="currentGame">
+                <div class="dropdown">
+                    <label class="d-block" for="dropdownMenuButton1">Current Game:</label>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        --- Select Game ---
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a id="ddOptionVal" class="dropdown-item" href="#">Valorant</a></li>
+                        <li><a id="ddOptionCSGO" class="dropdown-item" href="#">CS: GO</a></li>
+                        <li><a id="ddOptionOW" class="dropdown-item" href="#">Overwatch</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Search" name="search" autofocus>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4" id="newGame">
+                <div class="dropdown">
+                    <label class="d-block" for="dropdownMenuButton2">New Game:</label>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        --- Select Game ---
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a id="ddOptionVal2" class="dropdown-item" href="#">Valorant</a></li>
+                        <li><a id="ddOptionCSGO2" class="dropdown-item" href="#">CS: GO</a></li>
+                        <li><a id="ddOptionOW2" class="dropdown-item" href="#">Overwatch</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Search" name="search" autofocus>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="currentSens" class="d-block">Current Sensitivity:</label>
+                <input type="number" placeholder="0.000" id="currentSens">
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-4">
+                <label for="currentDPI">Current Game DPI</label>
+                <input type="number" placeholder="400" id="currentDPI">
+            </div>
+            <div class="col-md-4">
+                <label for="newDPI">New Game DPI</label>
+                <input type="number" placeholder="400" id="newDPI">
+            </div>
+            <div class="col-md-4">
+                <label for="newSens">Converted Sensitivity</label>
+                <input type="number" placeholder="0.000" id="newSens" readonly>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-md-4">
+                <button id="calculateButton" class="btn btn-light">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

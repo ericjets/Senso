@@ -1,0 +1,55 @@
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: #011627;
+  color: #F6F7F8;
+}
+
+body img {
+  max-height: 225px;
+}
+
+.GameImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.GameImgContainer img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#mainHeader {
+  color: #FF3366;
+}
+
+#description {
+  color: #F6F7F8;
+}
+
+#howToUse {
+  height: 250px;
+  padding-top: 10px;
+  border: 1px solid #2EC4B6;
+}
+
+#howToUse h2 {
+  color: #FF3366;
+}
+
+#converter {
+  border: 1px solid #2EC4B6;
+}
+/*# sourceMappingURL=index-style.css.map */
